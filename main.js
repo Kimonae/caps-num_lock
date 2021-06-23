@@ -19,7 +19,15 @@ if (event.getModifierState("NumLock")) {
 }else document.getElementById("warning").innerHTML = "⚠️ Caps Lock is activated...";
 
     
-    
+
+if (event.getModifierState("NumLock") && (event.getModifierState("CapsLock"))) {
+
+
+    document.getElementById("warning").innerHTML = "⚠️ Num and Caps Lock are activated...";
+    document.getElementById("warning").style.display = "block";
+
+
+}
 
 
 
